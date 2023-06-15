@@ -1,0 +1,41 @@
+body{
+    background-color: #ffefaf;
+}
+p {
+	color: rgb(19, 19, 21);
+}
+h1 {
+	color:rgb(4, 75, 99);
+	text-shadow: rgb(15, 226, 226) 1px 0 10px;
+}
+
+h2 {
+	color:#3f3faf;
+	border: solid 1px black;
+	margin: 5px;
+	background: linear-gradient(#e6ee54,50%, #18ed35);
+	font-family:cursive;
+}
+
+h3{
+    color:white;
+    border: dashed orange;
+    background-color: black;
+    font-family: system-ui;
+
+}
+a:link {
+    color: #2244f3;
+}
+
+a:visited{
+    color:rgb(179, 0, 255);
+}
+
+a:hover {
+    text-decoration: none;
+    color:green;
+}
+a.enshu2{
+    padding-left: 30px;
+}

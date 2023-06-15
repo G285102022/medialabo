@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(0deg, rgb(255, 140, 0), rgb(25, 109, 236) 40%, rgb(66, 4, 234));
+}
+h1{
+    font-family: Georgia, serif;
+    display: inline-block;
+  background: linear-gradient(135deg, #fed878 0%, #50d5fa 100%);
+  background: -webkit-linear-gradient(-45deg, #fed878 0%, #50d5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
