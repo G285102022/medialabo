@@ -12,24 +12,35 @@ hantei();
 hantei();
 hantei();
 hantei();
-
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let yoso = 4;
-  
+
+  //変数の設定
+  ka =document.querySelector('span#kaisu');
+  yo =document.querySelector('span#answer');
+  an =document.querySelector('p#result');
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
+  ka.textContent =  kaisu+1;
+  yo.textContent =  yoso;
+
   if(kotae===4&&kaisu<3){
-    console.log("正解です。おめでとう！");kaisu=kaisu+1;
+    an.textContent = '正解です。おめでとう！' ;
+    kaisu=kaisu+1;
   }else if(kotae<4&&kaisu<2){
-    console.log("まちがい、答えはもっと小さいですよ");kaisu=kaisu+1;
+    an.textContent = 'まちがい、答えはもっと小さいですよ' ;
+    kaisu=kaisu+1;
   }else if(kotae>4&&kaisu<2){
-    console.log("まちがい、答えはもっと大きいですよ");kaisu=kaisu+1;
+    an.textContent = 'まちがい、答えはもっと大きいですよ' ;
+    kaisu=kaisu+1;
   }else if(kotae!==4&&kaisu===2){
-    console.log("まちがい、残念でした答えは"+kotae+"です");kaisu=kaisu+1;
+    an.textContent = 'まちがい、残念でした答えは' +kotae+'です';
+    kaisu=kaisu+1;
   }else {
-    console.log("答えは"+kotae+"でした。すでにゲームは終わっています");kaisu=kaisu+1;
+    an.textContent = '答えは'+kotae+'でした。すでにゲームは終わっています';
+    kaisu=kaisu+1;
   }
 }

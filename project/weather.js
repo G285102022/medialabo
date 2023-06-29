@@ -55,3 +55,41 @@ console.log("風速："+data.wind.speed );
 console.log("風向："+data.wind.deg );
 console.log("都市名："+data.name );
 
+//課題4-2
+div = document.querySelector('div#result');
+ul = document.createElement('ul');
+li = document.createElement('li');
+li.textContent = '緯度：'+data.coord.lon;
+//divの中にli,liの中にp
+ul.insertAdjacentElement('beforeend', li);
+div.insertAdjacentElement('beforeend', ul);
+
+//pの後ろにp2,p3,p4...
+li2 = document.createElement('li');
+li2.textContent = '経度：'+data.coord.lat;
+ul.insertAdjacentElement('beforeend', li2);
+
+li3 = document.createElement('li');
+li3.textContent = '天気：'+data.weather[0].description;
+ul.insertAdjacentElement('beforeend', li3);
+
+li4 = document.createElement('li');
+li4.textContent = '最低気温：'+data.main.temp_min;
+ul.insertAdjacentElement('beforeend', li4);
+
+li5 = document.createElement('li');
+li5.textContent = '湿度：'+data.main.humidity;
+ul.insertAdjacentElement('beforeend', li5);
+
+li6 = document.createElement('li');
+li6.textContent = '風速：'+data.wind.speed;
+ul.insertAdjacentElement('beforeend', li6);
+
+li7 = document.createElement('li');
+li7.textContent = '風向：'+data.wind.deg;
+ul.insertAdjacentElement('beforeend', li7);
+
+li8 = document.createElement('li');
+li8.textContent = '都市名：'+data.name ;
+ul.insertAdjacentElement('beforeend', li8);
+
