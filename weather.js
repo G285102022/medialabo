@@ -44,7 +44,7 @@ let data = {
   "name": "北京市",
   "cod": 200
 };
-
+/*
 ////////// 課題3-2 ここからプログラムを書こう
 console.log("緯度："+data.coord.lon );
 console.log("経度："+data.coord.lat );
@@ -92,4 +92,21 @@ ul.insertAdjacentElement('beforeend', li7);
 li8 = document.createElement('li');
 li8.textContent = '都市名：'+data.name ;
 ul.insertAdjacentElement('beforeend', li8);
+*/
+
+//第5回課題
+let b = document.querySelector('button#btn');
+b.addEventListener('click', showSelectResult);
+
+function showSelectResult() {
+    let s = document.querySelector('select#timei');
+    let idx = s.selectedIndex;  // idx 番目の option が選択された
+
+    let os = s.querySelectorAll('option');  // s の子要素 option をすべて検索
+    let o = os.item(idx);       // os の idx 番目の要素
+
+    console.log('選択された ' + idx + ' 番目の option の情報:');
+    console.log('  value=' + o.getAttribute('value'));  // id 属性を表示
+    console.log('  textContent='+o.textContent);
+}
 
